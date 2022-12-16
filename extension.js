@@ -79,13 +79,13 @@ function generateGetterAndSetter(textPorperties) {
 		if (create) {
 
 			let code = `
-                    \tget get${Attribute}() {
-                    \t\treturn this.${pascalToCamelCase(Attribute)};
-                    \t}
+\tget get${Attribute}() {
+\t\treturn this.${pascalToCamelCase(Attribute)};
+\t}
 
-                    \tset set${Attribute}(${pascalToCamelCase(Attribute)}) {
-                    \t\tthis.${pascalToCamelCase(Attribute)} = ${pascalToCamelCase(Attribute)};
-                    \t}
+\tset set${Attribute}(${pascalToCamelCase(Attribute)}) {
+\t\tthis.${pascalToCamelCase(Attribute)} = ${pascalToCamelCase(Attribute)};
+\t}
                 `;
 			generatedCode += code;
 		}
